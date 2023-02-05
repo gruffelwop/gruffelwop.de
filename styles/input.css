@@ -1,0 +1,103 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--input);
+    -webkit-box-shadow: 0 0 0px 1000px var(--background) inset;
+    caret-color: var(--copy);
+}
+
+input[type=color] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 0;
+    position: relative;
+    left: -1px;
+}
+
+input[type=color]::-webkit-color-swatch {
+    border: #808080 1px solid;
+}
+
+input[type=color]::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+/* This has to be updated, iOS devices get an elipse-shaped input field */
+
+input[type=text] {
+    display: inline;
+
+    background-color: var(--background);
+
+    border: none;
+
+    outline: none;
+
+    resize: none;
+
+    color: var(--input);
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input[type=text]::selection {
+    background-color: var(--selection-background);
+    color: var(--selection);
+    -webkit-text-fill-color: var(--selection);
+}
+
+textarea {
+    display: block;
+
+    background-color: var(--background);
+
+    border: none;
+
+    outline: none;
+
+    resize: none;
+
+    color: #fff;
+
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    caret-color: var(--copy);
+
+    width: 100%;
+}
+
+/* new and not responsive yet */
+.button {
+    background-color: var(--button-background);
+    color: var(--button);
+
+    border: none;
+
+    padding: 10px 30px;
+
+    font-size: 24px;
+    line-height: 40px;
+}

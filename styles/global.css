@@ -1,0 +1,24 @@
+:root {
+    --background: #000;
+    --heading: #fff;
+    --copy: #808080;
+    /* --selection: #000;
+    --selection-background: #fff; */
+    --nav: #808080;
+    --nav-active: #fff;
+    --nav-background: var(--background);
+    --emphasize: #fff;
+    --link: var(--copy);
+    --button-background: var(--nav-active);
+    --button: var(--background);
+    --input: var(--heading);
+
+    --display: initial;
+
+    /* experimental */
+    --selection: var(--background);
+    --selection-background: var(--heading);
+
+    --button-background: var(--heading);
+    --button: var(--background);
+}

@@ -1,0 +1,120 @@
+.nav-bar {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: 10;
+    display: block;
+    padding: 0px 32px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    
+    background-color: var(--nav-background);
+}
+
+.nav-items {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+
+    position: relative;
+    float: right
+}
+
+.nav-item {
+    margin-left: 16px;
+    padding: 0px;
+    color: var(--copy);
+    font-size: 14px;
+    line-height: 72px;
+    font-weight: 400;
+    text-align: right;
+    letter-spacing: 0px;
+    text-decoration: none;
+    text-transform: none;
+
+    color: var(--nav);
+}
+
+.nav-item:hover {
+    color: var(--nav-active);
+}
+
+.nav-item.active {
+    color: var(--nav-active);
+}
+
+.nav-item::selection {
+    color: var(--nav);
+    background-color: transparent;
+}
+
+.nav-item.active::selection {
+    color: var(--nav-active);
+    background-color: transparent;
+}
+
+.settings-icon {
+    position: fixed;
+
+    right: 0;
+    bottom: 0;
+
+    color: var(--nav);
+
+    margin-bottom: 32px;
+    margin-right: 32px;
+}
+
+.settings-icon:hover {
+    color: var(--nav-active);
+}
+
+.settings-icon.active {
+    color: var(--nav-active);
+}
+
+.settings-icon::selection {
+    color: var(--nav);
+    background-color: transparent;
+}
+
+.settings-icon.active::selection {
+    color: var(--nav-active);
+    background-color: transparent;
+}
+
+/* .settings-icon-mobile {
+    margin-top: 16px; yo what's this for?
+} */

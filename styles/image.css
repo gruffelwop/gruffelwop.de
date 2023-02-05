@@ -1,0 +1,13 @@
+.image {
+    max-width: 100%;
+    height: auto;
+ 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    vertical-align: middle;
+}
+/* image caption and stacked image missing */

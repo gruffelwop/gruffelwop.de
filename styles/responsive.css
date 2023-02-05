@@ -1,0 +1,142 @@
+/* structure */
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 16px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 479px) {}
+
+/* copy */
+
+@media screen and (max-width: 767px) {
+  .heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 96px;
+    line-height: 96px;
+
+    text-align: left;
+
+    position: static;
+  }
+
+  .subheading {
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    font-size: 48px;
+    line-height: 48px;
+
+    text-align: left;
+  }
+
+  .copy {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: left;
+  }
+
+  .label-copy {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .heading {
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    font-size: 60px;
+    line-height: 60px;
+
+    position: static;
+  }
+
+  .subheading {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .copy {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: left;
+  }
+
+  .label-copy {
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+    font-size: 18px;
+    line-height: 30px;
+
+    text-align: left;
+  }
+}
+
+/* mobile nav-bar */
+
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    display: initial;
+
+    padding: 0px 16px;
+  }
+
+  .settings-icon {
+    background-color: var(--button-background);
+    color: var(--button);
+
+    border-radius: 50%;
+    padding: 16px;
+
+    margin: 16px;
+
+    z-index: 11;
+  }
+
+  .settings-icon:hover {
+    color: var(--button);
+  }
+
+  .settings-icon.active {
+    color: var(--button);
+  }
+
+  .settings-icon::selection {
+    color: var(--button);
+    background-color: var(--button-background);
+  }
+
+  .settings-icon.active::selection {
+    color: var(--button);
+    background-color: var(--button-background);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .nav-bar {
+    display: initial;
+  }
+}
